@@ -1,0 +1,8 @@
+prefix=/home/astar/catkin_ws/devel
+
+Name: yogi_kobuki
+Description: Description of yogi_kobuki
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/astar/catkin_ws/devel/lib 
+Requires: 

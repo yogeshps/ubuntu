@@ -1,0 +1,46 @@
+<launch>
+
+    <!--include file="$(find kobuki_node)/launch/minimal.launch">
+    <param name="acceleration_limiter" value="true" type="bool"/>
+    </include-->
+
+    <include file="$(find turtlebot_bringup)/launch/minimal.launch"/>
+
+    <include file="$(find kojoy)/launch/joylaunch.launch"/>
+
+    <node pkg="urg_node" type="urg_node" name="laser_scan" respawn="true" output="screen">
+        <param name="port" value="/dev/ttyACM0"/>
+        <param name="frame_id" value="base_link"/>
+        <param name="calibrate_time" type="bool" value="true"/>  
+        <param name="intensity" type="bool" value="false"/>
+        <param name="min_ang" value="-2.356194437"/>   
+        <param name="max_ang" value="2.35619443"/>    
+        <param name="cluster" value="1"/>
+        <remap from="scan" to="base_scan" />
+    </node>
+
+    <!-- Run self-filter -->
+    <node name="gmapping" pkg="gmapping" type="slam_gmapping" output="screen">
+        <param name="linearUpdate" value="0.1" />
+        <param name="angularUpdate" value="0.05" /> 
+        <param name="xmin" value="-20" />   
+        <param name="ymin" value="-20" />
+        <param name="xmax" value="20" />    
+        <param name="ymax" value="20" />
+        <param name="maxUrange" value="6" />    
+        <param name="delta" value="0.075" type="double"/> 
+    </node>
+
+    <!--- Run gmapping -->
+    <include file="$(find turtlebot_navigation)/launch/includes/gmapping/gmapping.launch.xml" >
+        <arg name="scan_topic" value="scan_filtered" />
+    </include> 
+    
+    <include file="$(find turtlebot_navigation)/laser/move_base_laser.launch" />
+
+
+    <node pkg="tf" type="static_transform_publisher" name="tf1" args="0.0 0.0 0.0 0 0 0 1 /base_footprint /base_link 100"/>
+    <node pkg="tf" type="static_transform_publisher" name="tf3" args="0.0 0.0 0.0 0 0 0 1 /base_link /laser 100"/>    
+    <!--node pkg="tf" type="static_transform_publisher" name="tf2" args="0.058 0 0.125 0.0 0.0 3.1416 /base_link /base_laser_link 100" /-->
+
+</launch>
