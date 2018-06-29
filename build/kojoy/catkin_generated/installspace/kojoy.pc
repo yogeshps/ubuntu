@@ -1,0 +1,8 @@
+prefix=/home/astar/catkin_ws/install
+
+Name: kojoy
+Description: Description of kojoy
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/astar/catkin_ws/install/lib 
+Requires: 

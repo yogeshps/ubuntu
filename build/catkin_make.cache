@@ -1,2 +1,2 @@
-yogi_kobuki
+kojoy:yogi_kobuki
 -DCATKIN_DEVEL_PREFIX=/home/astar/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/astar/catkin_ws/install -G Unix Makefiles

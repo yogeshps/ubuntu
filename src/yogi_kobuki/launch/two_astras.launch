@@ -3,5 +3,5 @@
     <include file="$(find yogi_kobuki)/launch/camera2.launch"/>
     <!--node pkg="tf" type="static_transform_publisher" name="camera1_broadcaster" args="0 0 0.0 0 0 0 1 multi_map camera1_link 100" />
     <node pkg="tf" type="static_transform_publisher" name="camera2_broadcaster" args="0 0 0.0 0 0 0 1 multi_map camera2_link 100" /-->
-    <node pkg="tf" type="static_transform_publisher" name="camera3_broadcaster" args="0.15 0.1 -0.03 0 0 0.540 1 camera1_link camera2_link 150" />
+    <node pkg="tf" type="static_transform_publisher" name="camera3_broadcaster" args="0.16 0.22 0 0 0 0.505 1 camera1_link camera2_link 150" />
 </launch>
