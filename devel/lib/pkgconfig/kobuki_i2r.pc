@@ -1,0 +1,8 @@
+prefix=/home/astar/catkin_ws/devel
+
+Name: kobuki_i2r
+Description: Description of kobuki_i2r
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/astar/catkin_ws/devel/lib 
+Requires: 

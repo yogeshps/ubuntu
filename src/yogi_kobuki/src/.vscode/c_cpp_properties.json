@@ -1,0 +1,17 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/opt/ros/kinetic/include",
+        "/home/astar/catkin_ws/src/kojoy/include",
+        "/home/astar/catkin_ws/src/yogi_kobuki/include",
+        "/usr/include"
+      ],
+      "name": "Linux"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 2.8.3 FATAL_ERROR)
 project(yogi_kobuki)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
@@ -7,6 +7,9 @@ project(yogi_kobuki)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
+
+find_package(PCL 1.2 REQUIRED)
+
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
@@ -14,6 +17,12 @@ find_package(catkin REQUIRED COMPONENTS
   pcl_ros
   pcl_conversions
 )
+
+include_directories(${PCL_INCLUDE_DIRS})
+link_directories(${PCL_LIBRARY_DIRS})
+add_definitions(${PCL_DEFINITIONS})
+
+#find_package(PCL 1.7 REQUIRED)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -132,11 +141,21 @@ include_directories(
 ## either from message generation or dynamic reconfigure
 # add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
+
+
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/yogi_kobuki_node.cpp)
 add_executable(example src/example.cpp)
+add_executable(ros_pcl_yogi src/ros_pcl.cpp)
+add_executable(ros_pcl_yogi2 src/ros_pcl2.cpp)
+target_link_libraries(example ${catkin_LIBRARIES})
+target_link_libraries (ros_pcl_yogi ${PCL_LIBRARIES})
+target_link_libraries (ros_pcl_yogi ${catkin_LIBRARIES})
+target_link_libraries (ros_pcl_yogi2 ${PCL_LIBRARIES})
+target_link_libraries (ros_pcl_yogi2 ${catkin_LIBRARIES})
+
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -152,7 +171,6 @@ add_executable(example src/example.cpp)
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
-target_link_libraries(example ${catkin_LIBRARIES})
 
 #############
 ## Install ##
