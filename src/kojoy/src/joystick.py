@@ -26,12 +26,12 @@ def callback(msg):
 		
 	if msg.axes[up_down_stick] != 0.0:
 		print "Got from up-down stick\n"
-		move.linear.x = msg.axes[up_down_stick]*(0.35)
+		move.linear.x = msg.axes[up_down_stick]*(0.7)
 		move.angular.z = 0.0
 	elif msg.axes[left_right_stick] != 0.0:
 		print "Got from left-right stick\n"
 		move.linear.x = 0.0
-		move.angular.z = msg.axes[left_right_stick]*0.9
+		move.angular.z = msg.axes[left_right_stick]*1.5
 	elif msg.buttons[RB] == 1.0:
 		move.linear.x = 0.0
 		move.angular.z = 0.0				

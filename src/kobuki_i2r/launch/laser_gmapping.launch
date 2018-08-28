@@ -9,8 +9,8 @@
     <param name="frame_id" value="base_link"/>
     <param name="calibrate_time" type="bool" value="true"/>  
     <param name="intensity" type="bool" value="false"/>
-    <param name="min_ang" value="-2.2689"/>   
-    <param name="max_ang" value="2.2689"/>    
+    <param name="min_ang" value="-2.0"/>   
+    <param name="max_ang" value="2.0"/>    
     <param name="cluster" value="1"/>
     <remap from="scan" to="scan" />
   </node>
@@ -30,6 +30,6 @@
             <param name="use_tf_static" value="$(arg use_tf_static)"/>
   </node-->
 
-  <include file="$(find kojoy)/launch/joylaunch.launch" />
+  <!--include file="$(find kojoy)/launch/joylaunch.launch" /-->
 
 </launch>

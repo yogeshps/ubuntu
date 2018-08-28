@@ -1,10 +1,20 @@
 <launch>
  
   <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
-    <rosparam file="$(find kobuki_i2r)/laser/costmap_common_params.yaml" command="load" ns="global_costmap" />
-    <rosparam file="$(find kobuki_i2r)/laser/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <param name="base_local_planner" value = "base_local_planner/TrajectoryPlannerROS"/>
+    <param name="base_global_planner" value = "navfn/NavfnROS"/>
+    <param name= "oscillation_distance" value = "0.6"/>
+    <param name= "oscillation_timeout" value = "5.0"/>
+    <!--rosparam file="$(find kobuki_i2r)/param/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find kobuki_i2r)/param/costmap_common_params.yaml" command="load" ns="local_costmap" /-->
     <rosparam file="$(find kobuki_i2r)/param/local_costmap_params.yaml" command="load" />
     <rosparam file="$(find kobuki_i2r)/param/global_costmap_params.yaml" command="load" />
+    <!--rosparam file="$(find kobuki_i2r)/param/dwa_local_planner_params.yaml" command="load" /-->
+    <rosparam file="$(find kobuki_i2r)/param/base_local_planner_params.yaml" command="load" />
+    <rosparam file="$(find kobuki_i2r)/param/global_planner_params.yaml" command="load" />
+    <remap from="cmd_vel" to="mobile_base/commands/velocity"/>
+    <rosparam file="$(find kobuki_i2r)/laser/costmap_common_params2.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find kobuki_i2r)/laser/costmap_common_params2.yaml" command="load" ns="local_costmap" />
   </node>
 
 </launch>
