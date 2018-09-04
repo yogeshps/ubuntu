@@ -166,6 +166,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+yogi_kobuki/CMakeFiles/Lawrence_Code.dir/rule:
+	cd /home/astar/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 yogi_kobuki/CMakeFiles/Lawrence_Code.dir/rule
+.PHONY : yogi_kobuki/CMakeFiles/Lawrence_Code.dir/rule
+
+# Convenience name for target.
+Lawrence_Code: yogi_kobuki/CMakeFiles/Lawrence_Code.dir/rule
+
+.PHONY : Lawrence_Code
+
+# fast build rule for target.
+Lawrence_Code/fast:
+	cd /home/astar/catkin_ws/build && $(MAKE) -f yogi_kobuki/CMakeFiles/Lawrence_Code.dir/build.make yogi_kobuki/CMakeFiles/Lawrence_Code.dir/build
+.PHONY : Lawrence_Code/fast
+
+# Convenience name for target.
 yogi_kobuki/CMakeFiles/ros_pcl_yogi.dir/rule:
 	cd /home/astar/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 yogi_kobuki/CMakeFiles/ros_pcl_yogi.dir/rule
 .PHONY : yogi_kobuki/CMakeFiles/ros_pcl_yogi.dir/rule
@@ -705,6 +720,33 @@ pcl_msgs_generate_messages_lisp/fast:
 	cd /home/astar/catkin_ws/build && $(MAKE) -f yogi_kobuki/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build.make yogi_kobuki/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build
 .PHONY : pcl_msgs_generate_messages_lisp/fast
 
+src/Lawrence_Code.o: src/Lawrence_Code.cpp.o
+
+.PHONY : src/Lawrence_Code.o
+
+# target to build an object file
+src/Lawrence_Code.cpp.o:
+	cd /home/astar/catkin_ws/build && $(MAKE) -f yogi_kobuki/CMakeFiles/Lawrence_Code.dir/build.make yogi_kobuki/CMakeFiles/Lawrence_Code.dir/src/Lawrence_Code.cpp.o
+.PHONY : src/Lawrence_Code.cpp.o
+
+src/Lawrence_Code.i: src/Lawrence_Code.cpp.i
+
+.PHONY : src/Lawrence_Code.i
+
+# target to preprocess a source file
+src/Lawrence_Code.cpp.i:
+	cd /home/astar/catkin_ws/build && $(MAKE) -f yogi_kobuki/CMakeFiles/Lawrence_Code.dir/build.make yogi_kobuki/CMakeFiles/Lawrence_Code.dir/src/Lawrence_Code.cpp.i
+.PHONY : src/Lawrence_Code.cpp.i
+
+src/Lawrence_Code.s: src/Lawrence_Code.cpp.s
+
+.PHONY : src/Lawrence_Code.s
+
+# target to generate assembly for a file
+src/Lawrence_Code.cpp.s:
+	cd /home/astar/catkin_ws/build && $(MAKE) -f yogi_kobuki/CMakeFiles/Lawrence_Code.dir/build.make yogi_kobuki/CMakeFiles/Lawrence_Code.dir/src/Lawrence_Code.cpp.s
+.PHONY : src/Lawrence_Code.cpp.s
+
 src/example.o: src/example.cpp.o
 
 .PHONY : src/example.o
@@ -796,6 +838,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... install/local"
+	@echo "... Lawrence_Code"
 	@echo "... ros_pcl_yogi"
 	@echo "... topic_tools_generate_messages_py"
 	@echo "... topic_tools_generate_messages_lisp"
@@ -835,6 +878,9 @@ help:
 	@echo "... nodelet_topic_tools_gencfg"
 	@echo "... pcl_msgs_generate_messages_eus"
 	@echo "... pcl_msgs_generate_messages_lisp"
+	@echo "... src/Lawrence_Code.o"
+	@echo "... src/Lawrence_Code.i"
+	@echo "... src/Lawrence_Code.s"
 	@echo "... src/example.o"
 	@echo "... src/example.i"
 	@echo "... src/example.s"

@@ -9,6 +9,7 @@ project(yogi_kobuki)
 ## is used, also find other catkin packages
 
 find_package(PCL 1.2 REQUIRED)
+find_package(OpenCV REQUIRED)
 
 find_package(catkin REQUIRED COMPONENTS
   roscpp
@@ -19,6 +20,7 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 include_directories(${PCL_INCLUDE_DIRS})
+include_directories(  ${catkin_INCLUDE_DIRS}  ${OpenCV_INCLUDE_DIRS} )
 link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 
@@ -150,11 +152,16 @@ include_directories(
 add_executable(example src/example.cpp)
 add_executable(ros_pcl_yogi src/ros_pcl.cpp)
 add_executable(ros_pcl_yogi2 src/ros_pcl2.cpp)
+add_executable(Lawrence_Code src/Lawrence_Code.cpp)
 target_link_libraries(example ${catkin_LIBRARIES})
 target_link_libraries (ros_pcl_yogi ${PCL_LIBRARIES})
 target_link_libraries (ros_pcl_yogi ${catkin_LIBRARIES})
 target_link_libraries (ros_pcl_yogi2 ${PCL_LIBRARIES})
 target_link_libraries (ros_pcl_yogi2 ${catkin_LIBRARIES})
+target_link_libraries (Lawrence_Code ${PCL_LIBRARIES})
+target_link_libraries (Lawrence_Code ${catkin_LIBRARIES})
+target_link_libraries (Lawrence_Code ${OpenCV_LIBRARIES})
+
 
 
 ## Rename C++ executable without prefix

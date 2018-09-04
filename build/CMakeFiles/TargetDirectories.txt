@@ -100,6 +100,7 @@
 /home/astar/catkin_ws/build/yogi_kobuki/CMakeFiles/rebuild_cache.dir
 /home/astar/catkin_ws/build/yogi_kobuki/CMakeFiles/test.dir
 /home/astar/catkin_ws/build/yogi_kobuki/CMakeFiles/install/local.dir
+/home/astar/catkin_ws/build/yogi_kobuki/CMakeFiles/Lawrence_Code.dir
 /home/astar/catkin_ws/build/yogi_kobuki/CMakeFiles/ros_pcl_yogi.dir
 /home/astar/catkin_ws/build/yogi_kobuki/CMakeFiles/topic_tools_generate_messages_py.dir
 /home/astar/catkin_ws/build/yogi_kobuki/CMakeFiles/topic_tools_generate_messages_lisp.dir

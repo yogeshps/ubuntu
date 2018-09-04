@@ -894,6 +894,19 @@ sensor_msgs_generate_messages_py/fast:
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named Lawrence_Code
+
+# Build rule for target.
+Lawrence_Code: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Lawrence_Code
+.PHONY : Lawrence_Code
+
+# fast build rule for target.
+Lawrence_Code/fast:
+	$(MAKE) -f yogi_kobuki/CMakeFiles/Lawrence_Code.dir/build.make yogi_kobuki/CMakeFiles/Lawrence_Code.dir/build
+.PHONY : Lawrence_Code/fast
+
+#=============================================================================
 # Target rules for targets named ros_pcl_yogi
 
 # Build rule for target.
@@ -1430,6 +1443,7 @@ help:
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... Lawrence_Code"
 	@echo "... ros_pcl_yogi"
 	@echo "... topic_tools_generate_messages_py"
 	@echo "... topic_tools_generate_messages_lisp"
