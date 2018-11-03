@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 2.8.3 FATAL_ERROR)
-project(yogi_kobuki)
+cmake_minimum_required(VERSION 2.8.3)
+project(dl)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -7,28 +7,12 @@ project(yogi_kobuki)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-
-find_package(PCL 1.2 REQUIRED)
-find_package(OpenCV REQUIRED)
-#find_package(OpenCV 2 REQUIRED)
-#find_package(OpenCV 3 REQUIRED)
-
-
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
-  pcl_ros
-  pcl_conversions
-  #opencv_core
+  rosbag
 )
-
-include_directories(${PCL_INCLUDE_DIRS})
-include_directories(  ${catkin_INCLUDE_DIRS}  ${OpenCV_INCLUDE_DIRS} )
-link_directories(${PCL_LIBRARY_DIRS})
-add_definitions(${PCL_DEFINITIONS})
-
-#find_package(PCL 1.7 REQUIRED)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -121,7 +105,7 @@ add_definitions(${PCL_DEFINITIONS})
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES yogi_kobuki
+#  LIBRARIES dl
 #  CATKIN_DEPENDS roscpp rospy std_msgs
 #  DEPENDS system_lib
 )
@@ -139,7 +123,7 @@ include_directories(
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/yogi_kobuki.cpp
+#   src/${PROJECT_NAME}/dl.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -147,26 +131,10 @@ include_directories(
 ## either from message generation or dynamic reconfigure
 # add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
-
-
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-# add_executable(${PROJECT_NAME}_node src/yogi_kobuki_node.cpp)
-add_executable(example src/example.cpp)
-add_executable(ros_pcl_yogi src/ros_pcl.cpp)
-add_executable(ros_pcl_yogi2 src/ros_pcl2.cpp)
-add_executable(Lawrence_Code src/Lawrence_Code.cpp)
-target_link_libraries(example ${catkin_LIBRARIES})
-target_link_libraries (ros_pcl_yogi ${PCL_LIBRARIES})
-target_link_libraries (ros_pcl_yogi ${catkin_LIBRARIES})
-target_link_libraries (ros_pcl_yogi2 ${PCL_LIBRARIES})
-target_link_libraries (ros_pcl_yogi2 ${catkin_LIBRARIES})
-target_link_libraries (Lawrence_Code ${PCL_LIBRARIES})
-target_link_libraries (Lawrence_Code ${catkin_LIBRARIES})
-target_link_libraries (Lawrence_Code ${OpenCV_LIBRARIES})
-
-
+# add_executable(${PROJECT_NAME}_node src/dl_node.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -223,7 +191,7 @@ target_link_libraries (Lawrence_Code ${OpenCV_LIBRARIES})
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_yogi_kobuki.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_dl.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
