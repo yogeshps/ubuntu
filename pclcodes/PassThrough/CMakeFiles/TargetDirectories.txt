@@ -1,0 +1,3 @@
+/home/astar/pclcodes/PassThrough/CMakeFiles/rebuild_cache.dir
+/home/astar/pclcodes/PassThrough/CMakeFiles/edit_cache.dir
+/home/astar/pclcodes/PassThrough/CMakeFiles/passthrough.dir

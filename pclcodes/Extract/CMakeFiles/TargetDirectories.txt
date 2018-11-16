@@ -1,0 +1,3 @@
+/home/astar/pclcodes/CMakeFiles/edit_cache.dir
+/home/astar/pclcodes/CMakeFiles/rebuild_cache.dir
+/home/astar/pclcodes/CMakeFiles/extract_indices.dir
