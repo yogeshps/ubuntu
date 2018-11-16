@@ -196,111 +196,6 @@ ros_pcl_yogi/fast:
 .PHONY : ros_pcl_yogi/fast
 
 # Convenience name for target.
-yogi_kobuki/CMakeFiles/topic_tools_generate_messages_py.dir/rule:
-	cd /home/astar/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 yogi_kobuki/CMakeFiles/topic_tools_generate_messages_py.dir/rule
-.PHONY : yogi_kobuki/CMakeFiles/topic_tools_generate_messages_py.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_py: yogi_kobuki/CMakeFiles/topic_tools_generate_messages_py.dir/rule
-
-.PHONY : topic_tools_generate_messages_py
-
-# fast build rule for target.
-topic_tools_generate_messages_py/fast:
-	cd /home/astar/catkin_ws/build && $(MAKE) -f yogi_kobuki/CMakeFiles/topic_tools_generate_messages_py.dir/build.make yogi_kobuki/CMakeFiles/topic_tools_generate_messages_py.dir/build
-.PHONY : topic_tools_generate_messages_py/fast
-
-# Convenience name for target.
-yogi_kobuki/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule:
-	cd /home/astar/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 yogi_kobuki/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
-.PHONY : yogi_kobuki/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_lisp: yogi_kobuki/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
-
-.PHONY : topic_tools_generate_messages_lisp
-
-# fast build rule for target.
-topic_tools_generate_messages_lisp/fast:
-	cd /home/astar/catkin_ws/build && $(MAKE) -f yogi_kobuki/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make yogi_kobuki/CMakeFiles/topic_tools_generate_messages_lisp.dir/build
-.PHONY : topic_tools_generate_messages_lisp/fast
-
-# Convenience name for target.
-yogi_kobuki/CMakeFiles/topic_tools_generate_messages_eus.dir/rule:
-	cd /home/astar/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 yogi_kobuki/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
-.PHONY : yogi_kobuki/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_eus: yogi_kobuki/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
-
-.PHONY : topic_tools_generate_messages_eus
-
-# fast build rule for target.
-topic_tools_generate_messages_eus/fast:
-	cd /home/astar/catkin_ws/build && $(MAKE) -f yogi_kobuki/CMakeFiles/topic_tools_generate_messages_eus.dir/build.make yogi_kobuki/CMakeFiles/topic_tools_generate_messages_eus.dir/build
-.PHONY : topic_tools_generate_messages_eus/fast
-
-# Convenience name for target.
-yogi_kobuki/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule:
-	cd /home/astar/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 yogi_kobuki/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-.PHONY : yogi_kobuki/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_cpp: yogi_kobuki/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-
-.PHONY : topic_tools_generate_messages_cpp
-
-# fast build rule for target.
-topic_tools_generate_messages_cpp/fast:
-	cd /home/astar/catkin_ws/build && $(MAKE) -f yogi_kobuki/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make yogi_kobuki/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
-.PHONY : topic_tools_generate_messages_cpp/fast
-
-# Convenience name for target.
-yogi_kobuki/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule:
-	cd /home/astar/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 yogi_kobuki/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
-.PHONY : yogi_kobuki/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_nodejs: yogi_kobuki/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
-
-.PHONY : topic_tools_generate_messages_nodejs
-
-# fast build rule for target.
-topic_tools_generate_messages_nodejs/fast:
-	cd /home/astar/catkin_ws/build && $(MAKE) -f yogi_kobuki/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build.make yogi_kobuki/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build
-.PHONY : topic_tools_generate_messages_nodejs/fast
-
-# Convenience name for target.
-yogi_kobuki/CMakeFiles/std_srvs_generate_messages_eus.dir/rule:
-	cd /home/astar/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 yogi_kobuki/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
-.PHONY : yogi_kobuki/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_eus: yogi_kobuki/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
-
-.PHONY : std_srvs_generate_messages_eus
-
-# fast build rule for target.
-std_srvs_generate_messages_eus/fast:
-	cd /home/astar/catkin_ws/build && $(MAKE) -f yogi_kobuki/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make yogi_kobuki/CMakeFiles/std_srvs_generate_messages_eus.dir/build
-.PHONY : std_srvs_generate_messages_eus/fast
-
-# Convenience name for target.
-yogi_kobuki/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
-	cd /home/astar/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 yogi_kobuki/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-.PHONY : yogi_kobuki/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_cpp: yogi_kobuki/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-
-.PHONY : std_srvs_generate_messages_cpp
-
-# fast build rule for target.
-std_srvs_generate_messages_cpp/fast:
-	cd /home/astar/catkin_ws/build && $(MAKE) -f yogi_kobuki/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make yogi_kobuki/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
-.PHONY : std_srvs_generate_messages_cpp/fast
-
-# Convenience name for target.
 yogi_kobuki/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule:
 	cd /home/astar/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 yogi_kobuki/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
 .PHONY : yogi_kobuki/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
@@ -359,21 +254,6 @@ bond_generate_messages_nodejs: yogi_kobuki/CMakeFiles/bond_generate_messages_nod
 bond_generate_messages_nodejs/fast:
 	cd /home/astar/catkin_ws/build && $(MAKE) -f yogi_kobuki/CMakeFiles/bond_generate_messages_nodejs.dir/build.make yogi_kobuki/CMakeFiles/bond_generate_messages_nodejs.dir/build
 .PHONY : bond_generate_messages_nodejs/fast
-
-# Convenience name for target.
-yogi_kobuki/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule:
-	cd /home/astar/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 yogi_kobuki/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
-.PHONY : yogi_kobuki/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_nodejs: yogi_kobuki/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
-
-.PHONY : std_srvs_generate_messages_nodejs
-
-# fast build rule for target.
-std_srvs_generate_messages_nodejs/fast:
-	cd /home/astar/catkin_ws/build && $(MAKE) -f yogi_kobuki/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make yogi_kobuki/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
-.PHONY : std_srvs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 yogi_kobuki/CMakeFiles/nodelet_generate_messages_eus.dir/rule:
@@ -481,21 +361,6 @@ dynamic_reconfigure_gencfg/fast:
 .PHONY : dynamic_reconfigure_gencfg/fast
 
 # Convenience name for target.
-yogi_kobuki/CMakeFiles/std_srvs_generate_messages_py.dir/rule:
-	cd /home/astar/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 yogi_kobuki/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-.PHONY : yogi_kobuki/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_py: yogi_kobuki/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-
-.PHONY : std_srvs_generate_messages_py
-
-# fast build rule for target.
-std_srvs_generate_messages_py/fast:
-	cd /home/astar/catkin_ws/build && $(MAKE) -f yogi_kobuki/CMakeFiles/std_srvs_generate_messages_py.dir/build.make yogi_kobuki/CMakeFiles/std_srvs_generate_messages_py.dir/build
-.PHONY : std_srvs_generate_messages_py/fast
-
-# Convenience name for target.
 yogi_kobuki/CMakeFiles/bond_generate_messages_py.dir/rule:
 	cd /home/astar/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 yogi_kobuki/CMakeFiles/bond_generate_messages_py.dir/rule
 .PHONY : yogi_kobuki/CMakeFiles/bond_generate_messages_py.dir/rule
@@ -524,21 +389,6 @@ dynamic_reconfigure_generate_messages_cpp: yogi_kobuki/CMakeFiles/dynamic_reconf
 dynamic_reconfigure_generate_messages_cpp/fast:
 	cd /home/astar/catkin_ws/build && $(MAKE) -f yogi_kobuki/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make yogi_kobuki/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_cpp/fast
-
-# Convenience name for target.
-yogi_kobuki/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule:
-	cd /home/astar/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 yogi_kobuki/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-.PHONY : yogi_kobuki/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_lisp: yogi_kobuki/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-
-.PHONY : std_srvs_generate_messages_lisp
-
-# fast build rule for target.
-std_srvs_generate_messages_lisp/fast:
-	cd /home/astar/catkin_ws/build && $(MAKE) -f yogi_kobuki/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make yogi_kobuki/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
-.PHONY : std_srvs_generate_messages_lisp/fast
 
 # Convenience name for target.
 yogi_kobuki/CMakeFiles/pcl_ros_gencfg.dir/rule:
@@ -840,18 +690,10 @@ help:
 	@echo "... install/local"
 	@echo "... Lawrence_Code"
 	@echo "... ros_pcl_yogi"
-	@echo "... topic_tools_generate_messages_py"
-	@echo "... topic_tools_generate_messages_lisp"
-	@echo "... topic_tools_generate_messages_eus"
-	@echo "... topic_tools_generate_messages_cpp"
-	@echo "... topic_tools_generate_messages_nodejs"
-	@echo "... std_srvs_generate_messages_eus"
-	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... pcl_msgs_generate_messages_py"
 	@echo "... nodelet_generate_messages_lisp"
 	@echo "... dynamic_reconfigure_generate_messages_py"
 	@echo "... bond_generate_messages_nodejs"
-	@echo "... std_srvs_generate_messages_nodejs"
 	@echo "... nodelet_generate_messages_eus"
 	@echo "... pcl_msgs_generate_messages_nodejs"
 	@echo "... ros_pcl_yogi2"
@@ -860,10 +702,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... example"
 	@echo "... dynamic_reconfigure_gencfg"
-	@echo "... std_srvs_generate_messages_py"
 	@echo "... bond_generate_messages_py"
 	@echo "... dynamic_reconfigure_generate_messages_cpp"
-	@echo "... std_srvs_generate_messages_lisp"
 	@echo "... pcl_ros_gencfg"
 	@echo "... dynamic_reconfigure_generate_messages_lisp"
 	@echo "... install/strip"

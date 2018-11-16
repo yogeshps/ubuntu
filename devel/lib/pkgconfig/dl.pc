@@ -1,0 +1,8 @@
+prefix=/home/astar/catkin_ws/devel
+
+Name: dl
+Description: Description of dl
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/astar/catkin_ws/devel/lib 
+Requires: 

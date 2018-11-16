@@ -1,7 +1,6 @@
 <launch>
     <node pkg="joy" type="joy_node" name="joystick" output="screen">
         <param name="autorepeat_rate" value="3.0" type="double"/>
-        <param name="deadzone" value="0.2"/>
     </node>
 
     <node pkg="kojoy" type="joystick.py" name="joystick_kobuki_node" respawn="true"/>
